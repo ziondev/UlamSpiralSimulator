@@ -5,8 +5,8 @@
 
 config = {
   size: 6000,
-  pointSize: 4,
-  pointDistance: 4,
+  pointSize: 5,
+  pointDistance: 5,
   primePointColor: "red",
   pointColor: "#FAFAFA",
   numberOneColor:"#000",
