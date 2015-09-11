@@ -1,0 +1,1 @@
+This is a fast simulator of Ulam Spiral because it use the Sieve of Eratosthenes to calculate the primes and because all calculus are done without manipulating the DOM tree. After all calculus, the points are printed in a canvas element.
