@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ulam Spiral with Sieve of Eratosthenes Simulator - by Glauber Magalhães</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        #download {
+          position: absolute;
+          top: 0;
+          left: 0;
+          cursor:pointer;
+          color:#ccc;
+          font-weight: bold;
+          background: #333;
+          padding:3px;
+        }
+        #download:hover {
+          color:#fff;
+        }
+        #ulam_spiral { position: absolute; top: 0; left: 0; }
+    </style>
+  </head>
+  <body>
+      <canvas id="ulam_spiral"></canvas>
+      <a id="download">Download as image</a>
+      <script src="ulam_spiral_simulator.js"></script>
+      
+      <script type="text/javascript">
+        //DOWNLOAD CANVAS AS IMAGE
+        function downloadCanvas(link, canvasId, filename) {
+          link.href = document.getElementById(canvasId).toDataURL();
+          link.download = filename;
+        }
+        document.getElementById('download').addEventListener('click', function() {
+          downloadCanvas(this, 'ulam_spiral', 'ulam_spiral.png');
+        }, false);
+      </script>
+  </body>
+</html>
