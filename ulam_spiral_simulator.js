@@ -5,8 +5,8 @@
 
 config = {
   size: 6000,
-  pointSize: 2,
-  pointDistance: 2,
+  pointSize: 10,
+  pointDistance: 0,
   primePointColor: "#333",
   pointColor: "#CCC",
   numberOneColor:"red",
@@ -16,16 +16,16 @@ config = {
 //Make ulam spiral fit the screen
 if(config.fitWindow) {
   var largestSize = (document.body.clientWidth > document.body.clientHeight) ? document.body.clientWidth : document.body.clientHeight;
-  config.size = Math.ceil((largestSize / config.pointDistance)*(largestSize / config.pointDistance));
+  config.size = Math.ceil((largestSize / (config.pointSize + config.pointDistance) )*(largestSize / (config.pointSize + config.pointDistance) ));
 }
 
 function drawUlamSpiral(natural_numbers) {
   for (var i=0; i<natural_numbers.length; i++) {
     var position = getXYFromUlamSpiralIndex(i);
     if(natural_numbers[i] !== 0) {
-      drawPoint(position.x*config.pointDistance,position.y*config.pointDistance,config.primePointColor);
+      drawPoint(position.x*(config.pointSize + config.pointDistance),position.y*(config.pointSize + config.pointDistance) ,config.primePointColor);
     }else{
-      drawPoint(position.x*config.pointDistance,position.y*config.pointDistance,config.pointColor);
+      drawPoint(position.x*(config.pointSize + config.pointDistance),position.y*(config.pointSize + config.pointDistance),config.pointColor);
     }
   }
 
