@@ -1,4 +1,6 @@
 This is a fast simulator of Ulam Spiral because it use the Sieve of Eratosthenes to calculate the primes and because all calculus are done without manipulating the DOM tree. After all calculus, the points are printed in a canvas element.
 
+It is fully customizable, you can set the size of the dots, the distance between them, their colors and if the spiral will fill the window.
+
 About Ulam Spiral: https://en.wikipedia.org/wiki/Ulam_spiral
 Demo: http://powerfreela.com.br/glauber/experiments/UlamSpiralSimulator/

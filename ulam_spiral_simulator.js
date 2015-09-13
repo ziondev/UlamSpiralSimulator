@@ -5,11 +5,11 @@
 
 config = {
   size: 6000,
-  pointSize: 5,
-  pointDistance: 5,
-  primePointColor: "red",
-  pointColor: "#FAFAFA",
-  numberOneColor:"#000",
+  pointSize: 2,
+  pointDistance: 2,
+  primePointColor: "#333",
+  pointColor: "#CCC",
+  numberOneColor:"red",
   fitWindow: true
 }
 
@@ -123,7 +123,7 @@ function drawPoint(x_pos,y_pos,color) {
     ctx.fillStyle=color;
     ctx.strokeStyle=color;
     ctx.fillRect(x_pos,y_pos,config.pointSize,config.pointSize);
-    ctx.strokeRect(x_pos,y_pos,config.pointSize,config.pointSize);
+    //ctx.strokeRect(x_pos,y_pos,config.pointSize,config.pointSize);
   }
 }
 
