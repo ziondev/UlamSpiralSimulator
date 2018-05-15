@@ -4,6 +4,8 @@ This is the fastest simulator of Ulam Spiral because it use the Sieve of Eratost
 
 You can set the size of the dots, the distance between them, their colors and set the spiral will fill the window.
 
+See a demo here: https://glauber.ml/static/ulam-spiral/
+
 ## Features
 
 * React 16
