@@ -16,10 +16,10 @@ See a demo here: https://glauber.ml/static/ulam-spiral/
 ## Installation
 
 * `git clone git@github.com:glaubermagal/UlamSpiralSimulator.git`
-* cd UlamSpiralSimulator
-* npm install
-* npm run dev (for development)
-* npm run build (for production)
+* `cd UlamSpiralSimulator`
+* `npm install`
+* `npm run dev` (for development)
+* `npm run build` (for production)
 * visit `http://localhost:8080/`
 
 ## Warning!
