@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 
 
 class Spiral extends Component {
-
   state = {
     size: 6000,
     pointSize: 10,
