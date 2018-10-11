@@ -5,10 +5,10 @@ import { render } from 'react-dom';
 class Spiral extends Component {
   state = {
     size: 6000,
-    pointSize: 10,
+    pointSize: 5,
     pointDistance: 0,
     primePointColor: "#333333",
-    pointColor: "#CCCCCC",
+    pointColor: "#ff9a36",
     numberOneColor:"#ff0000",
     fitWindow: true
   };
